@@ -31,7 +31,7 @@ public class ParallelRunner {
 
         long startTime = System.nanoTime();
 
-        List<TestResult> results;
+        List<TestResult> results = null;
         try (ExecutorService executor = Executors.newFixedThreadPool(4)) {
             results = executor.invokeAll(tasks).stream()
                     .filter(future -> future.state() == Future.State.SUCCESS)
