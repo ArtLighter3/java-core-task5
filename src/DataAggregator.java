@@ -65,9 +65,9 @@ public class DataAggregator {
     public static void main(String[] args) {
         DataAggregator dataAggregator = new DataAggregator();
 
-        ProductInfo productInfo = dataAggregator.aggregateProductInfo("Ноутбук");
-
-        System.out.println(productInfo);
+        System.out.println(dataAggregator.aggregateProductInfo("Ноутбук"));
+        System.out.println(dataAggregator.aggregateProductInfo("Ноутбук2"));
+        System.out.println(dataAggregator.aggregateProductInfo("Ноутбук3"));
     }
 
 }
